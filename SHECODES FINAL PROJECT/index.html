@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color: white;
+        }
+        .container{
+            width: 300px;
+            display: block;
+            margin:50px auto;
+            border-radius: 20%;
+            
+            overflow: hidden;
+            }
+            img:hover {
+                transform: scale(1.2);
+            transition: 1s all ease-in ;
+
+            }
+            button{
+                color:white;
+                cursor:pointer;
+                background-color:black;
+                padding: 10px;
+                display: block;
+                margin: 50px auto;
+                text-transform: uppercase;
+                transition: 1s all ease-in-out ;
+                box-shadow:     0 1px 20px rgba(0,0,0,0.5);
+            }
+            button:hover{
+                color:black;
+                background-color: white;
+                
+            }
+            
+           
+            body{
+                background:linear-gradient(pink, rgb(50, 50, 160)) ;
+                
+            }
+            h1{
+                color: azure;
+                font-size: 200%;
+               text-align: center;
+               border: 1px solid white;
+              border-radius: 50px;
+
+               
+            }
+            p{
+                color: white;
+                font-size: larger;
+            }
+           
+            
+            h2{
+                color: white;
+                text-align: center;
+            }
+           
+    </style>
+</head>
+<body> 
+    <h1 class="boxed">I Love Icecream</h1>
+        
+    <h2>Especially French Vanilla</h2>
+      <hr>  
+    <div class="container">
+    <img  src="https://media.istockphoto.com/id/537314954/photo/vanilla-ice-cream-with-in-metal-vintage-bowl-copy-space.jpg?s=612x612&w=0&k=20&c=8hzkR0wx81KA4R1DRpHbhRI2B0xfPNeBD7y57Aq1Cu8="height="300px"width="300px"  alt="Icecream"/>
+    </div>
+    <hr>
+    <p><em><b>french-vanilla-ice-cream</b>  If you're wondering what, in fact, the difference is, french vanilla is marked by a French style of ice cream that utilizes egg yolks in the base. This makes for a creamier, richer consistency as well as a yellow-ish hue as opposed to vanilla's stark white.French vanilla ice cream is a luxurious variation of traditional vanilla ice cream, renowned for its rich and creamy texture infused with the decadent flavor of vanilla beans. Unlike regular vanilla ice cream, French vanilla typically contains egg yolks, lending it a velvety consistency and a deeper, more indulgent taste. Its distinctively smooth and fragrant profile makes it a beloved dessert choice, often enjoyed on its own or as a decadent accompaniment to various sweet treats and desserts.</em> </p>
+
+<a href="https://www.wallings.co.uk/flavours/"  target="_blank ">read website</a><br/>
+
+<button>
+    TRY FRENCH french-vanilla-ice-cream
+    
+</button>
+    
+
+<script>
+    function apply(){
+        
+        let name=prompt("what is your name?");
+        if(name.length){
+        alert("thank you "+ name +" we'll be in touch,meanwhile have alot of icecream!");
+    }
+    else
+    {
+        alert('no name ,no french vanilla for you!')
+    }
+}
+    let applyButton=document.querySelector("button");
+    applyButton.addEventListener("click",apply);
+</script>
+</body>
+</html>
